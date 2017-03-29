@@ -15,11 +15,11 @@ def search(sourceDir , targetDir):
     #mydir = "D:\\2017版本规划（正式稿）\\2017年3月"#指定版本库地址
     DSProjects = ['dpods','dpsor','dpsrc','dpstc','dpdsa']#定义DS工程列表
     #定义Datastage服务器信息，有变化才修改
-    serverInfo = [["dpsrc","10.249.34.40:9080", "ABCETL1","bide","bide"],
-                  ["dpsor","10.249.15.59:9080", "ETLSERVERN1","bide","ce0c258f30b2a1944e0b46f4db188164"],
-                  ["dpods","10.249.15.59:9080", "ETLSERVERN1","bide","ce0c258f30b2a1944e0b46f4db188164"],
-                  ["dpstc","10.249.34.40:9080", "ABCETL1","bide","bide"],
-                  ["dpdsa","10.249.34.40:9080", "ABCETL1","bide","bide"]]
+    serverInfo = [[],
+                  [],
+                  [],
+                  [],
+                  []]
     #获取脚本执行时的时间数据，并以YYYY-MM-DD生成目标文件夹
     gettime  =  time.localtime()#获取脚本执行时的时间数据，并以YYYY-MM-DD生成目标文件夹
     strTime = time.strftime("%Y-%m-%d", gettime)
